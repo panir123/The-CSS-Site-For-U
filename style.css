@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+  }
+  
+  :root{
+    --Variable:teal;
+   }    
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  #navbar {
+    display: flex;
+    position: sticky;
+    top:0;
+    background: #336699;
+    color: #ffffff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+  }
+  
+  #navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  #navbar ul li a {
+    color: #ffffff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+  }
+  
+  #navbar ul li a:hover {
+    background: #fff;
+    border-radius: 5px;
+    color:#333;
+    
+  }
+  #Home {
+    background: url('../image/bg-css.png')
+    no-repeat center/cover;
+    height: 100vh;
+  }
+      #Home{
+        background:url('../image/bg-css.png') no-repeat center/cover;
+        height:100vh;
+        display: flex;
+        flex-direction: column;
+        padding:0 4rem;
+        text-align: center;
+    }
+    #Animate{
+        background:lightsalmon;
+        height:100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding:0 4rem;
+    }
+    #Vary{
+        background:lightblue;
+        height:100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding:0 4rem;
+    }
+    p{
+        text-align: center;
+    }
+    .btn {
+        display: inline-block;
+        color: #fff;
+        background: #2f5fff;
+        padding: 0.5rem 2rem;
+        border: none;
+        border-radius: 5px;
+        text-align:center;
+        width:200px;
+        align-self: center;
+        
+      }
+      
+      .btn:hover {
+        background: white;
+        color:#2f5fff;
+      }
+      .bt2{
+        display: inline-block;
+        color: #fff;
+        background: #93cb52;
+        padding: 1rem 1rem;
+        border: none;
+        border-radius: 5px;
+        margin-left:700px;
+        margin-top:10px;
+
+      }
+      .bt2:hover {
+        background: white;
+        color:#2f5fff;
+      }
+    .frl{
+        font-size:3.5rem;
+    }
+    .p2p{
+     margin-bottom:100px;
+     margin-left:700px;
+    }
+    p{
+        font-size:1.25rem;
+    }
+    body{
+      background:#333;
+  }
+  .box{
+
+      background:white;
+      position: relative;
+      animation-name:PIKACHUUU;
+      animation-duration:8s;
+      animation-iteration-count:infinite;
+      margin-right:800px;
+      transition: all 2.5s ease-in-out;
+      text-align: center;
+  }
+  .box:hover{
+    background: lightcoral;
+    height:300px;
+    width:300px;
+    border-radius:50%;
+    content: "works";
+  }
+  @keyframes HARRYSTYLES{
+   from{
+    top:0;
+    background: white;
+    border-radius:50%;
+   } 
+   to{
+    top:300px;
+    border-radius:50%;
+   }   
+  }
+  @keyframes PIKACHUUU{
+   0%{
+    left:0;
+    top:0;
+    background: white;
+    border-radius:0%;
+   }
+   25%{
+    left:300px;
+    top:0;
+    background:white;
+    border-radius:12.5%;
+   }
+   50%{
+    left:300px;
+    top:300px;
+    background: white;
+    border-radius:25%;
+   }
+   75%{
+    left:0px;
+    top:300px;
+    background: white;
+    border-radius:37.5%;
+  }
+  100%{
+    left:0px;
+    top:0px;
+    background: white;
+    border-radius:50%;
+  }
+
+   
+  }
+    #Animate h1{
+     margin-top:105px;
+     text-shadow:.5rem .5rem .2rem rgb(16, 16, 102);
+    }
+    #Vary h1{
+      margin-top:105px;
+
+     }
+    .box{
+      padding:50px 50px;
+    }
+    #Home h1:nth-child(2){
+      color:#2f5fff;
+      font-size:3.5rem;
+    }
+    .bobx{
+      padding:4rem 4rem;
+      background:var(--Variable);
+      position: relative;
+      top:200px;
+      right:250px;
+      box-shadow: 10px 10px lightcoral;
+      box-shadow: inset 10px 10px 20px lightblue,  10px 10px 20px slategray;
+    }
+    .bobx:hover{
+      background: #556b2f ;
+      box-shadow: inset 10px 10px 20px whitesmoke  ,  10px 10px 20px goldenrod;
+    }
+    #contact {
+      display: flex;
+      height:100vh;
+      color:white;
+    }
+    
+    #contact .promotion, #contact .contact-form {
+      flex: 1;
+    }
+    
+    #contact .contact-form .form-group {
+      margin: 0.75rem;
+      margin-top:10px;
+    }
+    
+    #contact .contact-form label {
+      display: block;
+    }
+    
+    #contact .contact-form input,
+    #contact .contact-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+    }
+    input[ type=email],
+    input[type=text]
+    {width:100%;
+      padding: 0.5rem;}
+    form{
+      margin-top:100px;
+    }
+    label::before{
+      content:'*';
+      color: red;
+      padding-right:0.75rem;
+     }
+     label::after{
+      content:'*';
+      color: red;
+      padding-right:0.75rem;
+      display: none;
+     }
+     .btn:nth-child(2){
+      padding:0;
+      width:0;
+
+     }
+
+
+      #navbar ul{
+          list-style:none;
+      }
+      #navbar ul li{
+       padding:1rem;
+       display: inline-block;
+      position: relative;
+      }
+
+      #navbar ul li ul li a{
+          text-decoration: none;
+          color:#2f5fff;
+          text-align: center;
+         }
+         #showcase h1{
+          font-size:4rem;
+         }
+      #navbar ul li ul {
+          display: none;
+          background-color:white;
+      }
+      #navbar ul li:hover ul{
+          display: block;
+          position: absolute;
+          width:200px;
+          margin-top:1rem;
+          left:0; 
+         }
+         #navbar ul li ul li:hover{
+          background: #2f5fff; 
+          color:white;
+         }
+        #navbar ul li ul li a:hover{
+         background: #2f5fff;
+         color: #fff; 
+        }
+         #navbar ul li:hover ul li{
+          display: block;
+         }
+         .contact-form{
+          background:teal;
+         }
+         .promotion{
+          text-align:center;
+          justify-content: center;
+          align-self: center;
+         }
+         .promotion h1{
+          font-size:3rem;
+         }
+         .promotion p{
+          font-size:2rem;
+         }
+         .promotion h1{
+          transform:translateY(1000px); 
+          animation:HarryStyles 2s ease-in forwards;
+         }
+         @keyframes HarryStyles{
+             to{
+              transform:translateY(0px);
+             }
+         }
+         .promotion p{
+             transform:translateX(2000px); 
+             animation:BoomBoomBakudan 2s forwards 2s;
+            }
+            @keyframes BoomBoomBakudan{
+                to{
+                 transform:translateX(0px);
+                }
+            }
+            .promotion{
+              height:50vh;
+            }
+            .bt2:nth-child(3){
+              display: inline-block;
+              color: #fff;
+              background: #93cb52;
+              padding: 1rem 1rem !important;
+              border: none;
+              border-radius: 5px;
+              margin-top:10px;
+             font-size:14px;
+             margin-left:0;
+            }
+            .bt2:hover {
+              background: white;
+              color:#2f5fff;
+            }
+            .bt2 [target]:hover{
+              background:white;
+            }
+            form p{
+              font-size:7rem;
+            }
